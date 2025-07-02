@@ -1,0 +1,18 @@
+public class RepeatedName {
+    public static void main(String[] args) {
+        String input = "Ram is a good boy. Ram plays cricket. Ram likes ice cream.";
+        String target = "Ram";
+        
+        int count = 0;
+        String[] words = input.split(" ");
+        
+        for (String word : words) {
+            if (word.equals(target)) {
+                count++;
+            }
+        }
+        
+        System.out.println("The name '" + target + "' is repeated " + count + " times.");
+    }
+}
+
