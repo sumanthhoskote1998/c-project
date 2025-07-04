@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class RepeatedNameCounter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input name and number of repetitions
+        System.out.print("Enter a name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("How many times to print the name? ");
+        int times = scanner.nextInt();
+
+        // Print name the specified number of times
+        for (int i = 1; i <= times; i++) {
+            System.out.println(i + ": " + name);
+        }
+
+        // Show final count
+        System.out.println("\nThe name \"" + name + "\" was printed " + times + " times.");
+        
+        scanner.close();
+    }
+}
+
